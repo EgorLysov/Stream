@@ -11,7 +11,7 @@ input.pipe(hash).pipe(process.stdout);
 
 //Задание #2
 const  {Transform} = require('stream');
-//const Transform = stream.t
+
 const output2 = fs.createWriteStream("hexHash.txt");
 class HexTransform extends Transform {
     constructor(options) {
